@@ -1,8 +1,16 @@
 $(document).ready(function() {
   $("#mainForm").submit(function(event) {
     event.preventDefault();
-    $(".answer").text($("#q1").val());
     
+    let l1 = 0;
+    let l2 = 0;
+    let l3 = 0;
+    let l4 = 0;
+    let l5 = 0;
+
+    
+    
+    $(".answer").text("hello");    
     $("#results").show();
   });
 });

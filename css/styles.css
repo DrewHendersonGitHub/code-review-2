@@ -7,14 +7,12 @@ h1 {
   color: rgb(38, 39, 74)
 }
 
-p {
-
-}
-
 #results {
   display: none;
 }
 
 .btn {
   font-style: oblique;
+  outline: solid rgb(70, 70, 70);
+  background-color: rgb(170, 170, 170);
 }
