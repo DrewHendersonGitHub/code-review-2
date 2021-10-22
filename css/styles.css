@@ -8,5 +8,9 @@ h1 {
 }
 
 p {
-  
+
+}
+
+#results {
+  display: none;
 }
