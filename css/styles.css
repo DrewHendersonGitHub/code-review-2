@@ -14,3 +14,7 @@ p {
 #results {
   display: none;
 }
+
+.btn {
+  font-style: oblique;
+}
