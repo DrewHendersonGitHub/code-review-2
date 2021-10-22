@@ -7,12 +7,20 @@ h1 {
   color: rgb(38, 39, 74)
 }
 
-#results {
-  display: none;
+#mainForm {
+  margin-top: 5%;
+}
+
+.questions {
+  margin-top:5%;
 }
 
 .btn {
   font-style: oblique;
   outline: solid rgb(70, 70, 70);
   background-color: rgb(170, 170, 170);
+}
+
+#results {
+  display: none;
 }
