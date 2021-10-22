@@ -1,24 +1,26 @@
-# _My Portfolio Landing Page_
+# _Programming Language Suggester_
 
 #### By _**Andrew Henderson**_
 
-#### _short desription_
-
+#### _A website that can help you decide a language_
 
 ## Technologies Used
 
 * _HTML_
 * _CSS_
-* _Javascript_
+* _Bootstrap_
+* _JavaScript_
+* _JQuery_
 
 ## Description
 
-_description here_
+_After answering the questions, the site will calculate the programming language that is the closest to what the answers were._
 
 ## Setup/Installation Requirements
 
-* _Download and unzip all files_
-* _Open index.html inside an internet browser_
+* _In the repository, click the green code button and select download ZIP_
+* _Unzip the files into desired directory_
+* _Open the index.html inside an internet browser_
 
 ## Known Bugs
 
