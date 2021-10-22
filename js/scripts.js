@@ -2,30 +2,29 @@ $(document).ready(function() {
   $("#mainForm").submit(function(event) {
     event.preventDefault();
     
-    let l1 = 0;
-    let l2 = 0;
-    let l3 = 0;
-    let l4 = 0;
-    let l5 = 0;
+    let python = 0;
+    let c = 0;
+    let basic = 0;
+    let javascript = 0;
+    let go = 0;
     let max = 0;
-    let winner = 1;
+    let winner = 0;
 
     function count (val) {
-      val = parseInt(val);
-      if (val === 1) {
-        l1++;
+      if (val === "p") {
+        python++;
       }
-      if (val === 2) {
-        l2++;
+      if (val === "c") {
+        c++;
       }
-      if (val === 3) {
-        l3++;
+      if (val === "b") {
+        basic++;
       }
-      if (val === 4) {
-        l4++;
+      if (val === "j") {
+        javascript++;
       }
-      if (val === 5) {
-        l5++;
+      if (val === "g") {
+        go++;
       }
     }
     
@@ -40,31 +39,54 @@ $(document).ready(function() {
     count($("#q9").val());
     count($("#q10").val());
 
-    console.log(l1);
-    console.log(l2);
-    console.log(l3);
-    console.log(l4);
-    console.log(l5);
+    console.log(python);
+    console.log(c);
+    console.log(basic);
+    console.log(javascript);
+    console.log(go);
     
-    max = l1;
-    if (l2 > max) {
-      max = l2;
+    if (python > 0) {
+      max = python;
+      winner = 1;
+    }
+    max = python;
+    if (c > max) {
+      max = c;
       winner = 2;
     }
-    if (l3 > max) {
-      max = l3;
+    if (basic > max) {
+      max = basic;
       winner = 3;
     }
-    if (l4 > max) {
-      max = l4;
+    if (javascript > max) {
+      max = javascript;
       winner = 4;
     }
-    if (l5 > max) {
-      max = l5;
+    if (go > max) {
+      max = go;
       winner = 5;
     }
     
-    $(".answer").text(winner);    
+    if (winner === 0) {
+      $(".answer").text("none of them, you gotta at least answer one question");
+    }
+    if (winner === 1) {
+      $(".answer").text("Python");
+    }
+    if (winner === 2) {
+      $(".answer").text("C");
+    }
+    if (winner === 3) {
+      $(".answer").text("BASIC");
+    }
+    if (winner === 4) {
+      $(".answer").text("JavaScript");
+    }
+    if (winner === 5) {
+      $(".answer").text("Go");
+    }
+    
     $("#results").show();
+    $("#mainForm").toggle();
   });
 });

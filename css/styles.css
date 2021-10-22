@@ -16,11 +16,13 @@ h1 {
 }
 
 .btn {
+  font-size: 200%;
   font-style: oblique;
   outline: solid rgb(70, 70, 70);
-  background-color: rgb(170, 170, 170);
+  background-color: rgb(180, 180, 180);
 }
 
 #results {
   display: none;
+  
 }
