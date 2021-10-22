@@ -86,7 +86,7 @@ $(document).ready(function() {
       $(".answer").text(" Go");
     }
     
-    $("#results").show();
+    $("#results").fadeIn();
     $("#mainForm").toggle();
   });
 });

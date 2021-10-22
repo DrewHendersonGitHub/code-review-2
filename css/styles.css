@@ -26,15 +26,14 @@ p {
   font-weight: 600;
 }
 
+#results {
+  display: none;
+}
+
 .btn {
   font-size: 200%;
   font-style: oblique;
   outline: solid rgb(70, 70, 70);
   background-color: rgb(180, 180, 180);
   color: rgb(25, 25, 90);
-}
-
-#results {
-  display: none;
-
 }
