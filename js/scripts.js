@@ -68,28 +68,25 @@ $(document).ready(function() {
     }
     
     if (winner === 0) {
-      $(".answer").text("none of them, you gotta at least answer one question");
+      $(".answer").text("... none of them, you gotta at least answer one question");
     }
     if (winner === 1) {
-      $(".answer").text("Python");
+      $(".answer").text(" Python");
     }
     if (winner === 2) {
-      $(".answer").text("C");
+      $(".answer").text(" C");
     }
     if (winner === 3) {
-      $(".answer").text("BASIC");
+      $(".answer").text(" BASIC");
     }
     if (winner === 4) {
-      $(".answer").text("JavaScript");
+      $(".answer").text(" JavaScript");
     }
     if (winner === 5) {
-      $(".answer").text("Go");
+      $(".answer").text(" Go");
     }
     
     $("#results").show();
     $("#mainForm").toggle();
   });
-  $("#results").submit(function(event) {
-    
-  })
 });

@@ -1,18 +1,29 @@
 body {
   background-color: rgb(155, 198, 214);
+  color: rgb(38, 39, 74)
 }
 
 h1 {
   text-align: center;
-  color: rgb(38, 39, 74)
+}
+
+.container {
+  background-color: rgb(135, 170, 170);
+  outline: solid black;
+  padding: 2%;
 }
 
 #mainForm {
-  margin-top: 5%;
+  margin-top: 1%;
 }
 
 .questions {
-  margin-top:5%;
+  margin-top:4%;
+}
+
+p {
+  font-size: large;
+  font-weight: 600;
 }
 
 .btn {
@@ -20,9 +31,10 @@ h1 {
   font-style: oblique;
   outline: solid rgb(70, 70, 70);
   background-color: rgb(180, 180, 180);
+  color: rgb(25, 25, 90);
 }
 
 #results {
   display: none;
-  
+
 }
