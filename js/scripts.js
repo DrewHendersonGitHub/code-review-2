@@ -89,4 +89,7 @@ $(document).ready(function() {
     $("#results").show();
     $("#mainForm").toggle();
   });
+  $("#results").submit(function(event) {
+    
+  })
 });
