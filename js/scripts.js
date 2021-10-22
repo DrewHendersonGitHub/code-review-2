@@ -33,17 +33,6 @@ $(document).ready(function() {
     count($("#q3").val());
     count($("#q4").val());
     count($("#q5").val());
-    count($("#q6").val());
-    count($("#q7").val());
-    count($("#q8").val());
-    count($("#q9").val());
-    count($("#q10").val());
-
-    console.log(python);
-    console.log(c);
-    console.log(basic);
-    console.log(javascript);
-    console.log(go);
     
     if (python > 0) {
       max = python;
