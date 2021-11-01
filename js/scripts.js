@@ -14,16 +14,16 @@ $(document).ready(function() {
       if (val === "p") {
         python++;
       }
-      if (val === "c") {
+      else if (val === "c") {
         c++;
       }
-      if (val === "b") {
+      else if (val === "b") {
         basic++;
       }
-      if (val === "j") {
+      else if (val === "j") {
         javascript++;
       }
-      if (val === "g") {
+      else if (val === "g") {
         go++;
       }
     }
@@ -38,7 +38,6 @@ $(document).ready(function() {
       max = python;
       winner = 1;
     }
-    max = python;
     if (c > max) {
       max = c;
       winner = 2;
@@ -59,19 +58,19 @@ $(document).ready(function() {
     if (winner === 0) {
       $(".answer").text("... none of them, you gotta at least answer one question");
     }
-    if (winner === 1) {
+    else if (winner === 1) {
       $(".answer").text(" Python");
     }
-    if (winner === 2) {
+    else if (winner === 2) {
       $(".answer").text(" C");
     }
-    if (winner === 3) {
+    else if (winner === 3) {
       $(".answer").text(" BASIC");
     }
-    if (winner === 4) {
+    else if (winner === 4) {
       $(".answer").text(" JavaScript");
     }
-    if (winner === 5) {
+    else if (winner === 5) {
       $(".answer").text(" Go");
     }
     
