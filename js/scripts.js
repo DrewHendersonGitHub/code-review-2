@@ -11,20 +11,22 @@ $(document).ready(function() {
     let winner = 0;
 
     function count (val) {
-      if (val === "p") {
-        python++;
-      }
-      else if (val === "c") {
-        c++;
-      }
-      else if (val === "b") {
-        basic++;
-      }
-      else if (val === "j") {
-        javascript++;
-      }
-      else if (val === "g") {
-        go++;
+      if (val !== '0') {
+        if (val === "p") {
+          python++;
+        }
+        else if (val === "c") {
+          c++;
+        }
+        else if (val === "b") {
+          basic++;
+        }
+        else if (val === "j") {
+          javascript++;
+        }
+        else {
+          go++;
+        }
       }
     }
     
@@ -70,7 +72,7 @@ $(document).ready(function() {
     else if (winner === 4) {
       $(".answer").text(" JavaScript");
     }
-    else if (winner === 5) {
+    else {
       $(".answer").text(" Go");
     }
     
